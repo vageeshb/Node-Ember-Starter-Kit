@@ -1,0 +1,23 @@
+{
+  "name": "myblog",
+  "version": "0.0.0",
+  "authors": [
+    "VageeshB <vageesh_bhasin@outlook.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "ember": "~1.5.1"
+  }
+}
