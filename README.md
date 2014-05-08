@@ -5,7 +5,8 @@ My Node.js + Ember.js Starter Kit
 * Default packages:
  * Client: Bootstrap, Ember, Handlebars, jQuery
  * Server: Express, grunt
-* All the handlebar templates are injected into 'server/views/index.html'
+ * Database: MongoDB (Driver : Mongoose)
+* All the handlebar templates are injected into 'server/views/index.html' from 'app/templates'
 
 Instructions:
 * git clone repository
@@ -16,4 +17,4 @@ Instructions:
 Note:
 * All ember scripts go into 'app' folder
 * All handlebar templates go into 'app/templates' folder
-* A;; server related scripts go into 'server' folder
+* All server related scripts go into 'server' folder

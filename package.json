@@ -1,5 +1,5 @@
 {
-  "name": "Node.js+Ember.js Starter Seed",
+  "name": "Node.js-Ember.js-Starter-Seed",
   "version": "0.0.1",
   "private": true,
   "author": "VageeshB",
@@ -9,7 +9,8 @@
     "morgan": "~1.0.0",
     "cookie-parser": "~1.0.1",
     "body-parser": "~1.0.0",
-    "debug": "~0.7.4"
+    "debug": "~0.7.4",
+    "mongoose": "~3.8.8"
   },
   "devDependencies": {
     "grunt": "~0.4.4",
