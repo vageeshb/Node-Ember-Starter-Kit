@@ -13,8 +13,14 @@ module.exports = function(grunt) {
         jshintrc: '.jshintrc',
         reporter: require('jshint-stylish')
       },
-      scripts: {
-        src: ['Gruntfile.js', 'app.js', 'app/**/*.js']
+      app: {
+        src: ['app/**/*.js']
+      },
+      server: {
+        src: ['server/**/*.js']
+      },
+      gruntFile: {
+        src: ['Gruntfile.js']
       }
     },
 
@@ -24,7 +30,7 @@ module.exports = function(grunt) {
         livereload: true,
       },
       express: {
-        files:  [ 'app.js' ],
+        files:  [ 'server/**/*.js' ],
         tasks:  [ 'jshint', 'bowerInstall', 'injector', 'express:dev' ],
         options: {
           spawn: false // for grunt-contrib-watch v0.5.0+, "nospawn: true" for lower versions. Without this option specified express won't be reloaded
@@ -39,7 +45,7 @@ module.exports = function(grunt) {
     // Installing bower dependencies
     bowerInstall: {
       target:{
-        src: 'views/index.html',
+        src: 'server/views/index.html',
         ignorePath: '../public'
       }
     },
@@ -51,7 +57,7 @@ module.exports = function(grunt) {
       },
       ember_files: {
         files: {
-          'views/index.html': ['app/**/*.js'],
+          'server/views/index.html': ['app/**/*.js'],
         }
       },
       hbs_templates: {
@@ -69,7 +75,7 @@ module.exports = function(grunt) {
           },
         },
         files: {
-          'views/index.html': ['app/templates/**/*.hbs'],
+          'server/views/index.html': ['app/templates/**/*.hbs'],
         }
       },
     },
@@ -78,7 +84,7 @@ module.exports = function(grunt) {
     express: {
       dev: {
         options: {
-          script: 'bin/www'          
+          script: 'server/app.js'          
         }
       },
     }
