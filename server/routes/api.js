@@ -6,7 +6,12 @@ module.exports = {
   all: function(req, res) {
     Thing.find({}, function(err, data) {
       if(err) { throw err; }
-      res.json({data: data});
+      res.json({
+        url: '/api/all',
+        version: '1.0',
+        callTime: new Date(),
+        data: data
+      });
     });
   },
 

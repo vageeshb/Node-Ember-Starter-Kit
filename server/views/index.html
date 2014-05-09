@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Blog</title>
+  <title>Starter Kit</title>
   <!-- bower:css -->
   <link rel="stylesheet" href="..//bower_components/bootstrap/dist/css/bootstrap.css" />
   <!-- endbower -->
@@ -11,8 +11,17 @@
 <!-- application.hbs -->
 <script type="text/x-handlebars" data-template-name="application">
   <div class="container">
-    <h2>Ember Starter Kit 3</h2>
+    <h2>Ember + Node Starter Kit</h2>
+    {{outlet}}
   </div>
+</script>
+
+<script type="text/x-handlebars" data-template-name="things">
+  <ul>
+    {{#each item in model}}
+      <li><h3>{{item.name}} - {{item.description}}</h3></li>
+    {{/each}}
+   </ul>
 </script>
 <!-- end template -->
 <!-- endinjector -->

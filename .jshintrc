@@ -1,6 +1,9 @@
 {
   "node": true,
   "globals": {
-    "Ember": true
+    "Ember": true,
+    "Em": true,
+    "App": true,
+    "$": true
   }
 }

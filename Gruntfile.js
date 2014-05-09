@@ -37,6 +37,10 @@ module.exports = function(grunt) {
         files: ['Gruntfile.js', 'app/**/*.js' ],
         tasks: ['jshint', 'bowerInstall', 'injector'],
       },
+      templates: {
+        files: ['app/templates/**/*.hbs'],
+        tasks: ['bowerInstall', 'injector'],
+      }
     },
 
     // Installing bower dependencies
