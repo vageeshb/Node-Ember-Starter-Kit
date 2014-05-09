@@ -15,7 +15,8 @@ app.set('port', process.env.PORT || 3000);
 // Middleware
 middleware(app, express);
 // Database
-mongoose.connect(db.url, function () {
+mongoose.connect(db.url, function (err) {
+  if (err) throw err;
   console.log('Connected to database!');
 });
 

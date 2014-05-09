@@ -6,9 +6,9 @@
 </script>
 
 <script type="text/x-handlebars" data-template-name="things">
-  <ul>
+  <ul class="list-group">
     {{#each item in model}}
-      <li><h3>{{item.name}} - {{item.description}}</h3></li>
+      <li class="list-group-item">{{item.name}} - {{item.description}}</li>
     {{/each}}
-   </ul>
+  </ul>
 </script>

@@ -12,6 +12,14 @@ module.exports = {
       {
         name: 'Ember.js',
         description:'Framework to create ambitious web applications'
+      },
+      {
+        name: 'MongoDB',
+        description: 'Document-oriented NoSQL Database'
+      },
+      {
+        name: 'ExpressJS',
+        description: 'Simple and flexible framework for creating web applications using Node.js'
       }], function () {
         console.log('Dummy Things created!');
       });

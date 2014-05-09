@@ -32,6 +32,9 @@ module.exports = function(grunt) {
       express: {
         files:  [ 'server/**/*.js' ],
         tasks:  [ 'jshint', 'bowerInstall', 'injector', 'express:dev' ],
+        options: {
+          spawn: false
+        }
       },
       scripts: {
         files: ['Gruntfile.js', 'app/**/*.js' ],
