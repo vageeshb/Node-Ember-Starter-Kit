@@ -1,5 +1,6 @@
 My Node.js + Ember.js Starter Kit
 =================================
+## DEPRECATED - Please use [EMBER-CLI](http://iamstef.net/ember-cli/) - Excellent tools for having your Ember app production ready. Server with your own API ##
 
 * Initial seed project for creating Node.js+Ember.js web application
 * Default packages:
